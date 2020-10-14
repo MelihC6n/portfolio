@@ -1,2 +1,2 @@
 # melihcanakgunes.github.io
-https://melihc6n.github.io/main/
+https://melihc6n.github.io/site/
