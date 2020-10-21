@@ -41,7 +41,7 @@
   position: absolute;
   bottom: 0px;
   right: 0px;
-  width: 35%;
+  width: auto;
 height: auto;
 opacity: 0.6;
 }
