@@ -37,8 +37,6 @@
   transform: translate(-30%, -50%);
 }
 
-.floatRight{float:right;}
-
 .bottomright {
   position: absolute;
   bottom: 0px;
