@@ -36,3 +36,14 @@
   /* bring your own prefixes */
   transform: translate(-30%, -50%);
 }
+
+.floatRight{float:right;}
+
+.bottomright {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 35%;
+height: auto;
+opacity: 0.5;
+}
