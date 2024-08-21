@@ -7,6 +7,7 @@
   text-decoration: none;
   border: none;
   outline: none;
+  scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
   --mainColor:rgb(0, 255, 128);
 }
@@ -40,10 +41,12 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+  backdrop-filter: blur(20px);
 }
 
 .logo {
   font-size: 3rem;
+  text-shadow: 0 0 0px var(--mainColor);
   color: var(--mainColor);
   font-weight: 800;
   cursor: pointer;
@@ -51,7 +54,8 @@ header {
 }
 
 .logo:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
+    text-shadow: 0 0 20px var(--mainColor);
 }
 
 nav a {
@@ -67,6 +71,12 @@ nav a:hover,
 nav a.active {
   color: var(--mainColor);
   border-bottom: 3px solid var(--mainColor);
+}
+
+#menu-icon{
+    font-size: 3rem;
+    color: var(--mainColor);
+    display: none;
 }
 
 @media (max-width: 995px) {
@@ -237,16 +247,16 @@ span{
 
 @keyframes words{
     0%, 20%{
-        content: "BackEnd Developer";
+        content: "Developer";
     }
     21%, 40%{
-        content: "Developer";
+        content: "BackEnd Developer";
     }
     41%, 60%{
         content: "Database Developer";
     }
     61%, 80%{
-        content: "Algorithm Thinker";
+        content: ".Net Developer";
     }
     81%,100%{
         content: "ChatGPT User";
@@ -280,3 +290,92 @@ span{
     }
 }
 
+.heading{
+    font-size: 6rem;
+    text-align: center;
+    margin: 5rem 0;
+}
+.education{
+    padding: 100px 15px;
+}
+.education h2{
+    margin-bottom: 5rem;
+}
+.timeline-items{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.timeline-items::before{
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background-color: var(--mainColor);
+    left: calc(50% - 1px);
+}
+.timeline-item{
+    margin-bottom: 40px;
+    width: 100%;
+    position: relative;
+}
+.timeline-item:last-child{
+    margin-bottom: 0;
+}
+.timeline-item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+    text-align: right;
+}
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px);
+}
+.timeline-dot{
+    height: 12px;
+    width: 20px;
+    background-color: var(--mainColor);
+    box-shadow: 0 0 25px var(--mainColor),
+                0 0 50px font-variant;
+    position: absolute;
+    left: calc(50% - 8px);
+    border-radius: 10%;
+    top: 10px;
+}
+.timeline-date{
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--mainColor);
+    margin: 2px 0 15px;
+}
+.timeline-content{
+    border: 3px solid var(--mainColor);
+    padding: 15px 15px;
+    border-radius: 1rem;
+    cursor: pointer;
+    box-shadow: 0 0 5px var(--mainColor);
+    transition: 0.3s ease;
+}
+.timeline-content:hover{
+    transform: scale(1.04);
+    box-shadow: 0 0 20px var(--mainColor);
+}
+.timeline-content h3{
+    font-size: 20px;
+    margin: 0 0 10px;
+    font-weight: 500;
+}
+.timeline-content p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--mainColor);
+    width: 8px;
+}
