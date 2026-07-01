@@ -1,99 +1,247 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Melih Can Akgüneş — Backend & .NET Developer. Portfolio, projects and contact."
+    />
+    <meta name="theme-color" content="#0b0d12" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Melih Can Akgüneş — Backend & .NET Developer" />
+    <meta property="og:description" content="Backend & .NET developer portfolio." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="IMG.png" />
+
+    <title>Melih Can Akgüneş — Backend & .NET Developer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Portfolio Website</title>
   </head>
   <body>
-    <header>
-      <a href="#" class="logo">Melih Can Akgüneş</a>
-      <a class="fa-solid fa-bars" id="menu-icon"></a>
-      <nav>
-        <a href="#home" class="active">Home</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
+    <!-- Decorative background glows -->
+    <div class="bg-glows" aria-hidden="true">
+      <span class="glow glow-1"></span>
+      <span class="glow glow-2"></span>
+      <span class="glow glow-3"></span>
+    </div>
+
+    <!-- ============ HEADER ============ -->
+    <header class="site-header" id="top">
+      <nav class="nav container">
+        <a href="#home" class="logo">
+          <span class="logo-mark">MC</span>
+          <span class="logo-text">Melih Can Akgüneş</span>
+        </a>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home" data-i18n="nav.home">Ana Sayfa</a></li>
+          <li><a href="#about" data-i18n="nav.about">Hakkımda</a></li>
+          <li><a href="#skills" data-i18n="nav.skills">Yetenekler</a></li>
+          <li><a href="#education" data-i18n="nav.education">Eğitim</a></li>
+          <li><a href="#projects" data-i18n="nav.projects">Projeler</a></li>
+          <li><a href="#experience" data-i18n="nav.experience">Deneyim</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">İletişim</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <div class="lang-toggle" role="group" aria-label="Language">
+            <button type="button" data-lang="tr" class="active">TR</button>
+            <button type="button" data-lang="en">EN</button>
+          </div>
+          <button class="menu-btn" id="menu-btn" aria-label="Menu" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
       </nav>
     </header>
-    <section class="home" id="home">
-      <div class="home-img">
-        <img src="IMG.png" alt="" />
-      </div>
-      <div class="home-content">
-        <h1>Hi, It's <span>Melih Can</span></h1>
-        <h3 class="typing-text">I'm a <span></span></h3>
-        <p>
-          Firstly, welcome to my portfolio. I'm a 25 years old junior software
-          developer. I'm doing my best for making a place on the stone of future
-          and let's say, see you at there too.
-        </p>
-        <div class="social-icons">
-          <a href="https://www.linkedin.com/in/melih-can-akgüneş-5a403a227/"
-            ><i class="fa-brands fa-linkedin"></i
-          ></a>
-          <a href="https://github.com/MelihC6n"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-          <a href="https://www.instagram.com/melihcanakgunes/#"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
-          <a href="https://www.youtube.com/@melihcanakgunes"
-            ><i class="fa-brands fa-youtube"></i
-          ></a>
-        </div>
-        <a
-          href="https://www.linkedin.com/in/melih-can-akgüneş-5a403a227/"
-          class="btn">Hire me</a>
-      </div>
-    </section>
-    <section class="education" id="education">
-      <h2 class="heading">Education</h2>
-      <div class="timeline-items">
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-            <div class="timeline-date">2019</div>
-            <div class="timeline-content">
-                <h3>Associate Degree</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae in provident molestias, cupiditate beatae veniam, delectus fuga sequi obcaecati iusto, nobis debitis laudantium officia dolores culpa itaque facilis totam cumque!</p>
+
+    <main>
+      <!-- ============ HERO ============ -->
+      <section class="hero section" id="home">
+        <div class="container hero-inner">
+          <div class="hero-text reveal">
+            <p class="eyebrow"><span class="dot"></span><span data-i18n="hero.available">Yeni fırsatlara açık</span></p>
+            <h1 class="hero-title">
+              <span data-i18n="hero.hi">Merhaba, ben</span>
+              <span class="gradient-text">Melih Can</span>
+            </h1>
+            <h2 class="hero-role">
+              <span data-i18n="hero.iam">Ben bir</span>
+              <span class="typing" id="typing"></span>
+            </h2>
+            <p class="hero-desc" data-i18n="hero.desc">
+              Temiz, ölçeklenebilir backend sistemleri kurmaya odaklanan bir
+              yazılım geliştiriciyim. .NET ekosistemi, API tasarımı ve
+              veritabanı ile çalışıyorum.
+            </p>
+
+            <div class="hero-cta">
+              <a href="#contact" class="btn btn-primary" data-i18n="hero.cta1">İletişime geç</a>
+              <a href="#projects" class="btn btn-ghost" data-i18n="hero.cta2">Projeleri gör</a>
             </div>
-          
+
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/melih-can-akgüneş-5a403a227/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://github.com/MelihC6n" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.instagram.com/melihcanakgunes/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.youtube.com/@melihcanakgunes" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <div class="hero-photo reveal">
+            <div class="photo-ring">
+              <img src="IMG.png" alt="Melih Can Akgüneş" />
+            </div>
+          </div>
         </div>
-        <div class="timeline-item">
-            <div class="timeline-dot"></div>
-              <div class="timeline-date">2023</div>
-              <div class="timeline-content">
-                  <h3>Bachelor's Degree</h3>
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae in provident molestias, cupiditate beatae veniam, delectus fuga sequi obcaecati iusto, nobis debitis laudantium officia dolores culpa itaque facilis totam cumque!</p>
-              </div>
-            
+      </section>
+
+      <!-- ============ ABOUT ============ -->
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="section-eyebrow" data-i18n="about.eyebrow">Tanışalım</p>
+            <h2 class="section-title" data-i18n="about.title">Hakkımda</h2>
           </div>
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-              <div class="timeline-date">2024</div>
-              <div class="timeline-content">
-                  <h3>.Net Core Bootcamp</h3>
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae in provident molestias, cupiditate beatae veniam, delectus fuga sequi obcaecati iusto, nobis debitis laudantium officia dolores culpa itaque facilis totam cumque!</p>
-              </div>
-            
+          <div class="about-grid">
+            <div class="about-text reveal">
+              <p data-i18n="about.p1">
+                Backend geliştirmeye tutkuyla bağlı bir yazılımcıyım. .NET Core,
+                C# ve ilişkisel veritabanları ile güvenilir, sürdürülebilir
+                servisler yazmayı seviyorum. Öğrenmeye ve iyi mühendislik
+                pratiklerine önem veririm.
+              </p>
+              <p data-i18n="about.p2">
+                Şu anda full-stack yetkinliğimi geliştiriyor, gerçek dünya
+                problemlerine çözüm üreten projeler üzerinde çalışıyorum.
+              </p>
+            </div>
+            <ul class="about-facts reveal" id="about-facts"></ul>
           </div>
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-              <div class="timeline-date">2024 ~ Present</div>
-              <div class="timeline-content">
-                  <h3>Yetenek Başakşehir FullStac Developer Bootcamp</h3>
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae in provident molestias, cupiditate beatae veniam, delectus fuga sequi obcaecati iusto, nobis debitis laudantium officia dolores culpa itaque facilis totam cumque!</p>
-              </div>
-            
+        </div>
+      </section>
+
+      <!-- ============ SKILLS ============ -->
+      <section class="section" id="skills">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="section-eyebrow" data-i18n="skills.eyebrow">Neler yapıyorum</p>
+            <h2 class="section-title" data-i18n="skills.title">Yetenekler & Teknolojiler</h2>
           </div>
+          <div class="skills-grid" id="skills-grid"></div>
+        </div>
+      </section>
+
+      <!-- ============ EDUCATION ============ -->
+      <section class="section" id="education">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="section-eyebrow" data-i18n="education.eyebrow">Yolculuğum</p>
+            <h2 class="section-title" data-i18n="education.title">Eğitim</h2>
+          </div>
+          <div class="timeline" id="education-timeline"></div>
+        </div>
+      </section>
+
+      <!-- ============ PROJECTS ============ -->
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="section-eyebrow" data-i18n="projects.eyebrow">Bazı işlerim</p>
+            <h2 class="section-title" data-i18n="projects.title">Projeler</h2>
+          </div>
+          <div class="projects-grid" id="projects-grid"></div>
+        </div>
+      </section>
+
+      <!-- ============ EXPERIENCE ============ -->
+      <section class="section" id="experience">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="section-eyebrow" data-i18n="experience.eyebrow">Nerelerde çalıştım</p>
+            <h2 class="section-title" data-i18n="experience.title">Deneyim</h2>
+          </div>
+          <div class="timeline" id="experience-timeline"></div>
+        </div>
+      </section>
+
+      <!-- ============ CONTACT ============ -->
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="section-eyebrow" data-i18n="contact.eyebrow">İletişim</p>
+            <h2 class="section-title" data-i18n="contact.title">Birlikte çalışalım</h2>
+            <p class="section-sub" data-i18n="contact.sub">
+              Bir sorun, iş fırsatı ya da sadece merhaba demek için — mesaj at.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-info reveal">
+              <a class="contact-card" href="mailto:makgunes@bizmed.biz">
+                <i class="fa-solid fa-envelope"></i>
+                <div>
+                  <span class="contact-label" data-i18n="contact.email">E-posta</span>
+                  <span class="contact-value">makgunes@bizmed.biz</span>
+                </div>
+              </a>
+              <a class="contact-card" href="https://github.com/MelihC6n" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github"></i>
+                <div>
+                  <span class="contact-label">GitHub</span>
+                  <span class="contact-value">@MelihC6n</span>
+                </div>
+              </a>
+              <a class="contact-card" href="https://www.linkedin.com/in/melih-can-akgüneş-5a403a227/" target="_blank" rel="noopener">
+                <i class="fa-brands fa-linkedin-in"></i>
+                <div>
+                  <span class="contact-label">LinkedIn</span>
+                  <span class="contact-value">Melih Can Akgüneş</span>
+                </div>
+              </a>
+            </div>
+
+            <form class="contact-form reveal" id="contact-form" action="https://formspree.io/f/your-id" method="POST">
+              <div class="field">
+                <label for="name" data-i18n="contact.name">Adın</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="field">
+                <label for="email" data-i18n="contact.emailLabel">E-postan</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="field">
+                <label for="message" data-i18n="contact.message">Mesajın</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" data-i18n="contact.send">Gönder</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Melih Can Akgüneş</p>
+        <p class="footer-note" data-i18n="footer.built">Vanilla HTML, CSS &amp; JS ile yapıldı.</p>
+        <a href="#top" class="to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
       </div>
-    </section>
+    </footer>
+
+    <script src="main.js"></script>
   </body>
 </html>
