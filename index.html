@@ -7,7 +7,7 @@
       name="description"
       content="Melih Can Akgüneş — Backend & .NET Developer. Portfolio, projects and contact."
     />
-    <meta name="theme-color" content="#0b0d12" />
+    <meta name="theme-color" content="#f7f6f3" />
 
     <!-- Open Graph -->
     <meta property="og:title" content="Melih Can Akgüneş — Backend & .NET Developer" />
@@ -20,7 +20,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <link
@@ -30,23 +30,12 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Decorative background glows -->
-    <div class="bg-glows" aria-hidden="true">
-      <span class="glow glow-1"></span>
-      <span class="glow glow-2"></span>
-      <span class="glow glow-3"></span>
-    </div>
-
     <!-- ============ HEADER ============ -->
     <header class="site-header" id="top">
       <nav class="nav container">
-        <a href="#home" class="logo">
-          <span class="logo-mark">MC</span>
-          <span class="logo-text">Melih Can Akgüneş</span>
-        </a>
+        <a href="#home" class="logo">Melih Can Akgüneş<span class="logo-dot">.</span></a>
 
         <ul class="nav-links" id="nav-links">
-          <li><a href="#home" data-i18n="nav.home">Ana Sayfa</a></li>
           <li><a href="#about" data-i18n="nav.about">Hakkımda</a></li>
           <li><a href="#skills" data-i18n="nav.skills">Yetenekler</a></li>
           <li><a href="#education" data-i18n="nav.education">Eğitim</a></li>
@@ -58,6 +47,7 @@
         <div class="nav-actions">
           <div class="lang-toggle" role="group" aria-label="Language">
             <button type="button" data-lang="tr" class="active">TR</button>
+            <span class="lang-sep">/</span>
             <button type="button" data-lang="en">EN</button>
           </div>
           <button class="menu-btn" id="menu-btn" aria-label="Menu" aria-expanded="false">
@@ -71,28 +61,30 @@
       <!-- ============ HERO ============ -->
       <section class="hero section" id="home">
         <div class="container hero-inner">
-          <div class="hero-text reveal">
-            <p class="eyebrow"><span class="dot"></span><span data-i18n="hero.available">Yeni fırsatlara açık</span></p>
-            <h1 class="hero-title">
-              <span data-i18n="hero.hi">Merhaba, ben</span>
-              <span class="gradient-text">Melih Can</span>
+          <div class="hero-text">
+            <p class="kicker reveal">
+              <span class="status-dot"></span>
+              <span data-i18n="hero.available">Yeni fırsatlara açık</span>
+            </p>
+            <h1 class="hero-title reveal">
+              <span class="lead" data-i18n="hero.hi">Merhaba, ben</span>
+              <span class="name">Melih Can Akgüneş<span class="accent">.</span></span>
             </h1>
-            <h2 class="hero-role">
+            <p class="hero-role reveal">
               <span data-i18n="hero.iam">Ben bir</span>
               <span class="typing" id="typing"></span>
-            </h2>
-            <p class="hero-desc" data-i18n="hero.desc">
-              Temiz, ölçeklenebilir backend sistemleri kurmaya odaklanan bir
-              yazılım geliştiriciyim. .NET ekosistemi, API tasarımı ve
-              veritabanı ile çalışıyorum.
+            </p>
+            <p class="hero-desc reveal" data-i18n="hero.desc">
+              Temiz ve ölçeklenebilir backend sistemleri kurmaya odaklanan bir
+              yazılım geliştiriciyim.
             </p>
 
-            <div class="hero-cta">
+            <div class="hero-cta reveal">
               <a href="#contact" class="btn btn-primary" data-i18n="hero.cta1">İletişime geç</a>
               <a href="#projects" class="btn btn-ghost" data-i18n="hero.cta2">Projeleri gör</a>
             </div>
 
-            <div class="social-icons">
+            <div class="social-icons reveal">
               <a href="https://www.linkedin.com/in/melih-can-akgüneş-5a403a227/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
               <a href="https://github.com/MelihC6n" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
               <a href="https://www.instagram.com/melihcanakgunes/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
@@ -100,8 +92,8 @@
             </div>
           </div>
 
-          <div class="hero-photo reveal">
-            <div class="photo-ring">
+          <div class="hero-portrait reveal">
+            <div class="portrait">
               <img src="IMG.png" alt="Melih Can Akgüneş" />
             </div>
           </div>
@@ -112,20 +104,19 @@
       <section class="section" id="about">
         <div class="container">
           <div class="section-head reveal">
-            <p class="section-eyebrow" data-i18n="about.eyebrow">Tanışalım</p>
-            <h2 class="section-title" data-i18n="about.title">Hakkımda</h2>
+            <span class="section-index">01</span>
+            <div class="section-heading">
+              <p class="kicker" data-i18n="about.eyebrow">Tanışalım</p>
+              <h2 class="section-title" data-i18n="about.title">Hakkımda</h2>
+            </div>
           </div>
           <div class="about-grid">
             <div class="about-text reveal">
               <p data-i18n="about.p1">
-                Backend geliştirmeye tutkuyla bağlı bir yazılımcıyım. .NET Core,
-                C# ve ilişkisel veritabanları ile güvenilir, sürdürülebilir
-                servisler yazmayı seviyorum. Öğrenmeye ve iyi mühendislik
-                pratiklerine önem veririm.
+                Backend geliştirmeye tutkuyla bağlı bir yazılımcıyım.
               </p>
               <p data-i18n="about.p2">
-                Şu anda full-stack yetkinliğimi geliştiriyor, gerçek dünya
-                problemlerine çözüm üreten projeler üzerinde çalışıyorum.
+                Şu anda full-stack yetkinliğimi geliştiriyorum.
               </p>
             </div>
             <ul class="about-facts reveal" id="about-facts"></ul>
@@ -137,8 +128,11 @@
       <section class="section" id="skills">
         <div class="container">
           <div class="section-head reveal">
-            <p class="section-eyebrow" data-i18n="skills.eyebrow">Neler yapıyorum</p>
-            <h2 class="section-title" data-i18n="skills.title">Yetenekler & Teknolojiler</h2>
+            <span class="section-index">02</span>
+            <div class="section-heading">
+              <p class="kicker" data-i18n="skills.eyebrow">Neler yapıyorum</p>
+              <h2 class="section-title" data-i18n="skills.title">Yetenekler &amp; Teknolojiler</h2>
+            </div>
           </div>
           <div class="skills-grid" id="skills-grid"></div>
         </div>
@@ -148,8 +142,11 @@
       <section class="section" id="education">
         <div class="container">
           <div class="section-head reveal">
-            <p class="section-eyebrow" data-i18n="education.eyebrow">Yolculuğum</p>
-            <h2 class="section-title" data-i18n="education.title">Eğitim</h2>
+            <span class="section-index">03</span>
+            <div class="section-heading">
+              <p class="kicker" data-i18n="education.eyebrow">Yolculuğum</p>
+              <h2 class="section-title" data-i18n="education.title">Eğitim</h2>
+            </div>
           </div>
           <div class="timeline" id="education-timeline"></div>
         </div>
@@ -159,8 +156,11 @@
       <section class="section" id="projects">
         <div class="container">
           <div class="section-head reveal">
-            <p class="section-eyebrow" data-i18n="projects.eyebrow">Bazı işlerim</p>
-            <h2 class="section-title" data-i18n="projects.title">Projeler</h2>
+            <span class="section-index">04</span>
+            <div class="section-heading">
+              <p class="kicker" data-i18n="projects.eyebrow">Bazı işlerim</p>
+              <h2 class="section-title" data-i18n="projects.title">Projeler</h2>
+            </div>
           </div>
           <div class="projects-grid" id="projects-grid"></div>
         </div>
@@ -170,8 +170,11 @@
       <section class="section" id="experience">
         <div class="container">
           <div class="section-head reveal">
-            <p class="section-eyebrow" data-i18n="experience.eyebrow">Nerelerde çalıştım</p>
-            <h2 class="section-title" data-i18n="experience.title">Deneyim</h2>
+            <span class="section-index">05</span>
+            <div class="section-heading">
+              <p class="kicker" data-i18n="experience.eyebrow">Nerelerde çalıştım</p>
+              <h2 class="section-title" data-i18n="experience.title">Deneyim</h2>
+            </div>
           </div>
           <div class="timeline" id="experience-timeline"></div>
         </div>
@@ -181,35 +184,29 @@
       <section class="section" id="contact">
         <div class="container">
           <div class="section-head reveal">
-            <p class="section-eyebrow" data-i18n="contact.eyebrow">İletişim</p>
-            <h2 class="section-title" data-i18n="contact.title">Birlikte çalışalım</h2>
-            <p class="section-sub" data-i18n="contact.sub">
-              Bir sorun, iş fırsatı ya da sadece merhaba demek için — mesaj at.
-            </p>
+            <span class="section-index">06</span>
+            <div class="section-heading">
+              <p class="kicker" data-i18n="contact.eyebrow">İletişim</p>
+              <h2 class="section-title" data-i18n="contact.title">Birlikte çalışalım</h2>
+            </div>
           </div>
+          <p class="section-sub reveal" data-i18n="contact.sub">
+            Bir soru, iş fırsatı ya da sadece merhaba demek için — çekinme, yaz.
+          </p>
 
           <div class="contact-grid">
             <div class="contact-info reveal">
               <a class="contact-card" href="mailto:makgunes@bizmed.biz">
-                <i class="fa-solid fa-envelope"></i>
-                <div>
-                  <span class="contact-label" data-i18n="contact.email">E-posta</span>
-                  <span class="contact-value">makgunes@bizmed.biz</span>
-                </div>
+                <span class="contact-label" data-i18n="contact.email">E-posta</span>
+                <span class="contact-value">makgunes@bizmed.biz</span>
               </a>
               <a class="contact-card" href="https://github.com/MelihC6n" target="_blank" rel="noopener">
-                <i class="fa-brands fa-github"></i>
-                <div>
-                  <span class="contact-label">GitHub</span>
-                  <span class="contact-value">@MelihC6n</span>
-                </div>
+                <span class="contact-label">GitHub</span>
+                <span class="contact-value">@MelihC6n</span>
               </a>
               <a class="contact-card" href="https://www.linkedin.com/in/melih-can-akgüneş-5a403a227/" target="_blank" rel="noopener">
-                <i class="fa-brands fa-linkedin-in"></i>
-                <div>
-                  <span class="contact-label">LinkedIn</span>
-                  <span class="contact-value">Melih Can Akgüneş</span>
-                </div>
+                <span class="contact-label">LinkedIn</span>
+                <span class="contact-value">Melih Can Akgüneş</span>
               </a>
             </div>
 
@@ -238,7 +235,9 @@
       <div class="container footer-inner">
         <p>© <span id="year"></span> Melih Can Akgüneş</p>
         <p class="footer-note" data-i18n="footer.built">Vanilla HTML, CSS &amp; JS ile yapıldı.</p>
-        <a href="#top" class="to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+        <a href="#top" class="to-top" aria-label="Back to top">
+          <span data-i18n="footer.top">Yukarı</span> <i class="fa-solid fa-arrow-up"></i>
+        </a>
       </div>
     </footer>
 
