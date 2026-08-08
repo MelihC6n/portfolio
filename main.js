@@ -333,8 +333,8 @@ const EXPERIENCE = [
     title: { tr: "Full-Stack Software Developer", en: "Full-Stack Software Developer" },
     org: { tr: "Sinerji Bilişim", en: "Sinerji Bilişim" },
     desc: {
-      tr: "BizmedWeb projesinde çalışmaya devam ederek Sinerji Bilişim bünyesinde görevimi sürdürüyorum.",
-      en: "Continuing my work on the BizmedWeb project as part of Sinerji Bilişim.",
+      tr: "Sinerji Bilişim'in markası olan Bizmed HBYS (Hastane Bilgi Yönetim Sistemi) çözümünün web versiyonu BizmedWeb'in geliştirilmesinde görev alıyorum.",
+      en: "I contribute to developing BizmedWeb, the web version of Bizmed — the hospital information management system (HIS) offered by Sinerji Bilişim.",
     },
   },
   {
@@ -342,8 +342,8 @@ const EXPERIENCE = [
     title: { tr: "Full-Stack Software Developer", en: "Full-Stack Software Developer" },
     org: { tr: "NeveraTech", en: "NeveraTech" },
     desc: {
-      tr: "MERN mimarisinde web uygulamaları, .NET ile backend API'ler, Electron ile masaüstü uygulamaları ve yapay zeka API'leriyle video üretme uygulamaları geliştirdim; ardından BizmedWeb projesine odaklandım.",
-      en: "Built web apps on the MERN stack, backend APIs with .NET, desktop apps with Electron and AI-powered video generation apps; then focused on the BizmedWeb project.",
+      tr: "MERN mimarisinde web uygulamaları, .NET ile backend API'ler, Electron ile masaüstü uygulamaları ve yapay zeka API'leriyle video üretme uygulamaları geliştirdim; ardından Bizmed HBYS'nin web versiyonu (BizmedWeb) geliştirmesine odaklandım.",
+      en: "Built web apps on the MERN stack, backend APIs with .NET, desktop apps with Electron and AI-powered video generation apps; then focused on developing BizmedWeb, the web version of the Bizmed HIS.",
     },
   },
   {
