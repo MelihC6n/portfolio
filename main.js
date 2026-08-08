@@ -25,16 +25,16 @@ const I18N = {
     "hero.hi": "Merhaba, ben",
     "hero.iam": "Ben bir",
     "hero.desc":
-      "Temiz ve ölçeklenebilir backend sistemleri kurmaya odaklanan bir yazılım geliştiriciyim. .NET ekosistemi, API tasarımı ve veritabanlarıyla çalışıyorum.",
+      ".NET Core, Node.js ve React/Next.js/Angular ekosistemleriyle ölçeklenebilir web ve masaüstü uygulamaları geliştiriyorum. Clean Architecture, CQRS ve durumsuz (stateless) API tasarımını merkeze alırım.",
     "hero.cta1": "İletişime geç",
     "hero.cta2": "Projeleri gör",
 
     "about.eyebrow": "Tanışalım",
     "about.title": "Hakkımda",
     "about.p1":
-      "Backend geliştirmeye tutkuyla bağlı bir yazılımcıyım. .NET Core, C# ve ilişkisel veritabanlarıyla güvenilir, sürdürülebilir servisler yazmayı seviyorum. Öğrenmeye ve iyi mühendislik pratiklerine önem veririm.",
+      ".NET Core, Node.js ve React/Next.js/Angular ekosistemleriyle ölçeklenebilir web ve masaüstü uygulamaları geliştiren full-stack bir yazılımcıyım. Clean Architecture, CQRS ve durumsuz (stateless) API tasarımlarını merkeze alırım.",
     "about.p2":
-      "Şu anda full-stack yetkinliğimi geliştiriyor, gerçek dünya problemlerine çözüm üreten projeler üzerinde çalışıyorum.",
+      "Karmaşık harici sistem entegrasyonları, bulut bilişim, makine öğrenmesi hazırlık süreçleri ve yapay zeka destekli projeler üzerinde çalışıyorum. Şu anda Yönetim Bilişim Sistemleri yüksek lisansıma devam ediyorum.",
 
     "skills.eyebrow": "Neler yapıyorum",
     "skills.title": "Yetenekler & Teknolojiler",
@@ -77,16 +77,16 @@ const I18N = {
     "hero.hi": "Hi, I'm",
     "hero.iam": "I'm a",
     "hero.desc":
-      "A software developer focused on building clean, scalable backend systems. I work with the .NET ecosystem, API design and databases.",
+      "I build scalable web and desktop applications with the .NET Core, Node.js and React/Next.js/Angular ecosystems — centered on Clean Architecture, CQRS and stateless API design.",
     "hero.cta1": "Get in touch",
     "hero.cta2": "View projects",
 
     "about.eyebrow": "Get to know me",
     "about.title": "About Me",
     "about.p1":
-      "I'm a developer passionate about backend engineering. I enjoy writing reliable, maintainable services with .NET Core, C# and relational databases. I care about learning and solid engineering practices.",
+      "I'm a full-stack developer building scalable web and desktop applications across the .NET Core, Node.js and React/Next.js/Angular ecosystems, centered on Clean Architecture, CQRS and stateless API design.",
     "about.p2":
-      "I'm currently expanding my full-stack skill set and working on projects that solve real-world problems.",
+      "I work on complex external-system integrations, cloud computing, machine-learning preparation pipelines and AI-powered projects. I'm currently pursuing a master's in Management Information Systems.",
 
     "skills.eyebrow": "What I do",
     "skills.title": "Skills & Technologies",
@@ -120,16 +120,16 @@ const I18N = {
 
 /* ---------- 2. TYPING ROLES ---------- */
 const ROLES = {
-  tr: ["Backend Geliştirici", ".NET Geliştirici", "Veritabanı Geliştirici", "Full-Stack Geliştirici"],
-  en: ["Backend Developer", ".NET Developer", "Database Developer", "Full-Stack Developer"],
+  tr: ["Full-Stack .NET Developer", "Backend Developer", "Web & Masaüstü Geliştirici", ".NET & Node.js Developer"],
+  en: ["Full-Stack .NET Developer", "Backend Developer", "Web & Desktop Developer", ".NET & Node.js Developer"],
 };
 
 /* ---------- 3. ABOUT FACTS ---------- */
 const FACTS = [
-  { icon: "fa-solid fa-location-dot", label: { tr: "Konum", en: "Location" }, value: { tr: "İstanbul, Türkiye", en: "İstanbul, Türkiye" } },
-  { icon: "fa-solid fa-crosshairs", label: { tr: "Odak", en: "Focus" }, value: { tr: "Backend & .NET", en: "Backend & .NET" } },
-  { icon: "fa-solid fa-language", label: { tr: "Diller", en: "Languages" }, value: { tr: "Türkçe, İngilizce", en: "Turkish, English" } },
-  { icon: "fa-solid fa-circle-check", label: { tr: "Durum", en: "Status" }, value: { tr: "Yeni fırsatlara açık", en: "Open to opportunities" } },
+  { label: { tr: "Konum", en: "Location" }, value: { tr: "Esenyurt, İstanbul", en: "Esenyurt, İstanbul" } },
+  { label: { tr: "Odak", en: "Focus" }, value: { tr: "Full-Stack .NET & Web", en: "Full-Stack .NET & Web" } },
+  { label: { tr: "Eğitim", en: "Education" }, value: { tr: "YBS — Yüksek Lisans (devam)", en: "MIS — M.Sc. (ongoing)" } },
+  { label: { tr: "Diller", en: "Languages" }, value: { tr: "Türkçe · İngilizce (B1)", en: "Turkish · English (B1)" } },
 ];
 
 /* ---------- 4. SKILLS ---------- */
@@ -137,32 +137,32 @@ const SKILLS = [
   {
     icon: "fa-solid fa-code",
     title: { tr: "Diller", en: "Languages" },
-    tags: ["C#", "SQL", "JavaScript", "HTML", "CSS"],
+    tags: ["C#", "JavaScript", "TypeScript", "Python"],
   },
   {
     icon: "fa-solid fa-server",
     title: { tr: "Backend", en: "Backend" },
-    tags: [".NET Core", "ASP.NET Core", "Web API", "Entity Framework", "LINQ"],
+    tags: ["ASP.NET Core", "Web API", "Node.js", "Entity Framework", "CQRS", "MediatR"],
   },
   {
     icon: "fa-solid fa-database",
     title: { tr: "Veritabanı", en: "Database" },
-    tags: ["MS SQL Server", "T-SQL", "EF Core", "Stored Procedures"],
+    tags: ["MSSQL", "Oracle", "PostgreSQL", "MongoDB", "Redis"],
   },
   {
     icon: "fa-solid fa-window-maximize",
     title: { tr: "Frontend", en: "Frontend" },
-    tags: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
-  },
-  {
-    icon: "fa-solid fa-screwdriver-wrench",
-    title: { tr: "Araçlar", en: "Tools" },
-    tags: ["Git & GitHub", "Visual Studio", "VS Code", "Postman"],
+    tags: ["React", "Next.js", "Angular", "TypeScript", "Bootstrap"],
   },
   {
     icon: "fa-solid fa-diagram-project",
-    title: { tr: "Kavramlar", en: "Concepts" },
-    tags: ["OOP", "REST API", "MVC", "SOLID", "Clean Code"],
+    title: { tr: "Mimari & Kavramlar", en: "Architecture & Concepts" },
+    tags: ["Clean Architecture", "SOLID", "CQRS", "Repository", "Unit of Work", "Microservices", "DI"],
+  },
+  {
+    icon: "fa-solid fa-screwdriver-wrench",
+    title: { tr: "Araçlar & Sistem", en: "Tools & System" },
+    tags: ["Docker", "RabbitMQ", "Linux CLI", "Electron.js", "Git", "Supabase", "Firebase"],
   },
 ];
 
@@ -170,39 +170,30 @@ const SKILLS = [
    NOTE: Fill in real school names + descriptions.  */
 const EDUCATION = [
   {
-    date: "2024 — Present",
-    title: { tr: "Yetenek Başakşehir Full-Stack Bootcamp", en: "Yetenek Başakşehir Full-Stack Bootcamp" },
-    org: { tr: "Bootcamp", en: "Bootcamp" },
+    date: "2025 — Devam",
+    title: { tr: "Yönetim Bilişim Sistemleri — Yüksek Lisans", en: "Management Information Systems — M.Sc." },
+    org: { tr: "Dokuz Eylül Üniversitesi", en: "Dokuz Eylül University" },
     desc: {
-      tr: "Full-stack web geliştirme üzerine yoğun eğitim: .NET, veritabanı ve modern web teknolojileri.",
-      en: "Intensive full-stack web development program: .NET, databases and modern web technologies.",
+      tr: "Yönetim Bilişim Sistemleri alanında yüksek lisans eğitimime devam ediyorum.",
+      en: "Currently pursuing a master's degree in Management Information Systems.",
     },
   },
   {
-    date: "2024",
-    title: { tr: ".NET Core Bootcamp", en: ".NET Core Bootcamp" },
-    org: { tr: "Bootcamp", en: "Bootcamp" },
+    date: "2021 — 2023",
+    title: { tr: "Yönetim Bilişim Sistemleri — Lisans", en: "Management Information Systems — B.A." },
+    org: { tr: "Anadolu Üniversitesi", en: "Anadolu University" },
     desc: {
-      tr: ".NET Core ile backend geliştirme, Web API ve katmanlı mimari üzerine uygulamalı eğitim.",
-      en: "Hands-on backend development with .NET Core, Web API and layered architecture.",
+      tr: "Lisans derecesi. Not ortalaması: 3.12 / 4.00.",
+      en: "Bachelor's degree. GPA: 3.12 / 4.00.",
     },
   },
   {
-    date: "2023",
-    title: { tr: "Lisans Derecesi", en: "Bachelor's Degree" },
-    org: { tr: "Üniversite", en: "University" },
+    date: "2017 — 2019",
+    title: { tr: "Bilgisayar Programcılığı — Ön Lisans", en: "Computer Programming — Associate" },
+    org: { tr: "Dokuz Eylül Üniversitesi", en: "Dokuz Eylül University" },
     desc: {
-      tr: "Lisans eğitimi. (Bölüm ve üniversite bilgisini buraya ekle.)",
-      en: "Bachelor's education. (Add your major and university here.)",
-    },
-  },
-  {
-    date: "2019",
-    title: { tr: "Ön Lisans Derecesi", en: "Associate Degree" },
-    org: { tr: "Üniversite", en: "University" },
-    desc: {
-      tr: "Ön lisans eğitimi. (Bölüm ve okul bilgisini buraya ekle.)",
-      en: "Associate education. (Add your program and school here.)",
+      tr: "Ön lisans derecesi. Not ortalaması: 3.27 / 4.00.",
+      en: "Associate degree. GPA: 3.27 / 4.00.",
     },
   },
 ];
@@ -212,36 +203,102 @@ const EDUCATION = [
    (title, description, tech tags, GitHub + live links).  */
 const PROJECTS = [
   {
-    icon: "fa-solid fa-cart-shopping",
-    title: { tr: "E-Ticaret API", en: "E-Commerce API" },
+    icon: "fa-solid fa-network-wired",
+    title: { tr: "Merkezi Sipariş Yönetim API Köprüsü", en: "Central Order Management API Bridge" },
     desc: {
-      tr: "Ürün, sepet ve sipariş yönetimi için RESTful Web API. Katmanlı mimari ve EF Core ile geliştirildi.",
-      en: "RESTful Web API for product, cart and order management. Built with layered architecture and EF Core.",
+      tr: "Yemeksepeti, Migros Yemek, Getir Yemek ve Trendyol Go'dan gelen webhook verilerini tekilleştirip standartlaştıran durumsuz (stateless) .NET Core mimarisi. Ölçeklenebilir uç noktalar ve veri haritalama mantığıyla kurgulandı.",
+      en: "A stateless .NET Core architecture that unifies and standardizes webhook data from Yemeksepeti, Migros Yemek, Getir Yemek and Trendyol Go, built with scalable endpoints and data-mapping logic.",
     },
-    tags: [".NET Core", "Web API", "EF Core", "MS SQL"],
-    code: "https://github.com/MelihC6n",
+    tags: [".NET Core", "Web API", "Webhook", "Stateless"],
+    code: "",
     live: "",
   },
   {
-    icon: "fa-solid fa-list-check",
-    title: { tr: "Görev Yönetimi Uygulaması", en: "Task Management App" },
+    icon: "fa-solid fa-route",
+    title: { tr: "TripLog — Gezi & Tur Paylaşımı", en: "TripLog — Travel & Tour Sharing" },
     desc: {
-      tr: "Kullanıcıların görev oluşturup takip edebildiği bir uygulama. Kimlik doğrulama ve CRUD işlemleri.",
-      en: "An app where users create and track tasks. Includes authentication and full CRUD operations.",
+      tr: "Kullanıcıların seyahat rotalarını fotoğraflarla paylaşıp etkileşime girdiği sosyal platform. Frontend ve backend ayrı bulut sistemlerinde canlıya alındı. (Demo girişi: tester / test123)",
+      en: "A social platform where users share travel routes with photos and interact. Frontend and backend deployed on separate cloud systems. (Demo login: tester / test123)",
     },
-    tags: ["ASP.NET Core", "MVC", "SQL Server"],
-    code: "https://github.com/MelihC6n",
+    tags: ["Angular", "Web API", "AWS", "Vercel"],
+    code: "https://github.com/MelihC6n/TripLog",
+    live: "https://trip-log-green.vercel.app",
+  },
+  {
+    icon: "fa-solid fa-warehouse",
+    title: { tr: "ERP — Kurumsal Kaynak Planlama", en: "ERP — Enterprise Resource Planning" },
+    desc: {
+      tr: "İşletmeler için depo, stok, ürün reçeteleri ve satış modüllerini barındıran kapsamlı bir ERP sistemi.",
+      en: "A comprehensive ERP system with warehouse, stock, product-recipe and sales modules for businesses.",
+    },
+    tags: ["ASP.NET Core", "Angular", "Clean Arch.", "CQRS", "MediatR"],
+    code: "https://github.com/MelihC6n/ERP-Application",
     live: "",
   },
   {
-    icon: "fa-solid fa-blog",
-    title: { tr: "Blog / İçerik Yönetimi", en: "Blog / CMS" },
+    icon: "fa-solid fa-calendar-check",
+    title: { tr: "E-Appointment — Randevu Sistemi", en: "E-Appointment — Booking System" },
     desc: {
-      tr: "Yazı, kategori ve yorum yönetimi olan basit bir içerik yönetim sistemi.",
-      en: "A simple content management system with posts, categories and comments.",
+      tr: "Kullanıcıların farklı departmanlardaki doktorlar için takvim üzerinden randevu alıp yönetebildiği dijital sağlık/randevu sistemi.",
+      en: "A digital health/appointment system where users book and manage appointments with doctors across departments via a calendar.",
     },
-    tags: ["C#", ".NET", "Entity Framework"],
-    code: "https://github.com/MelihC6n",
+    tags: ["ASP.NET Core", "Angular", "DevExtreme", "SmartEnum"],
+    code: "https://github.com/MelihC6n/eAppointment",
+    live: "",
+  },
+  {
+    icon: "fa-solid fa-wand-magic-sparkles",
+    title: { tr: "PictureLab AI — Görsel Üretim SaaS", en: "PictureLab AI — Image Generation SaaS" },
+    desc: {
+      tr: "Kullanıcıların özelleştirilmiş yapay zeka eğitimleri yapıp görsel üretebildiği bir SaaS platformu.",
+      en: "A SaaS platform where users run customized AI trainings and generate images.",
+    },
+    tags: ["Next.js", "Supabase", "Vercel", "Replicate API"],
+    code: "",
+    live: "",
+  },
+  {
+    icon: "fa-solid fa-video",
+    title: { tr: "ShotApp — Kamera Kayıt & Yönetim", en: "ShotApp — Camera Capture & Management" },
+    desc: {
+      tr: "Kamera kayıtlarını yerel ağ (RTSP) üzerinden alıp işleyen ve otomatik aralıklarla buluta yedekleyen masaüstü kamera kayıt ve yönetim çerçevesi.",
+      en: "A desktop framework that captures camera streams over the local network (RTSP), processes them and backs them up to the cloud at automatic intervals.",
+    },
+    tags: ["Electron.js", "Firebase", "RTSP"],
+    code: "",
+    live: "",
+  },
+  {
+    icon: "fa-solid fa-compass-drafting",
+    title: { tr: "İnşaat Analitik Platformu", en: "Construction Analytics Platform" },
+    desc: {
+      tr: "Sektörel DXF/DWG dosyalarını değerlendirip mimari katmanları okuyan ve makine öğrenmesiyle yapısal maliyet tahmini için metin parametrelerini ayrıştıran yazılım.",
+      en: "Software that evaluates industry DXF/DWG files, reads architectural layers and parses text parameters for structural cost estimation via machine learning.",
+    },
+    tags: ["Machine Learning", "DXF/DWG", "Parsing"],
+    code: "",
+    live: "",
+  },
+  {
+    icon: "fa-solid fa-bomb",
+    title: { tr: "Gerçek Zamanlı Çok Oyunculu Mayın Tarlası", en: "Real-Time Multiplayer Minesweeper" },
+    desc: {
+      tr: "Anti-hile protokollerine ve otoriter sunucu mimarisine sahip, rekabetçi mobil bulmaca oyunu. (Yüksek lisans mezuniyet tezi projesi)",
+      en: "A competitive mobile puzzle game with anti-cheat protocols and an authoritative server architecture. (Master's graduation thesis project)",
+    },
+    tags: ["Real-time", "Multiplayer", "Anti-cheat"],
+    code: "",
+    live: "",
+  },
+  {
+    icon: "fa-solid fa-burger",
+    title: { tr: "MyBurger — Restoran Menü & Sipariş", en: "MyBurger — Restaurant Menu & Ordering" },
+    desc: {
+      tr: "Dinamik malzeme ekleme ve kişiselleştirilebilir sipariş süreçlerini yöneten restoran otomasyonu.",
+      en: "A restaurant automation handling dynamic ingredient selection and customizable ordering flows.",
+    },
+    tags: ["Vanilla JS", "Bootstrap", "ASP.NET Core"],
+    code: "https://github.com/MelihC6n/MyBurger",
     live: "",
   },
 ];
@@ -250,12 +307,39 @@ const PROJECTS = [
    NOTE: Confirm/replace with your real roles.  */
 const EXPERIENCE = [
   {
-    date: "2024 — Present",
-    title: { tr: "Yazılım Geliştirici", en: "Software Developer" },
-    org: { tr: "Bizmed", en: "Bizmed" },
+    date: "2025 Kasım — Devam",
+    title: { tr: "Full-Stack Software Developer", en: "Full-Stack Software Developer" },
+    org: { tr: "Sinerji Bilişim", en: "Sinerji Bilişim" },
     desc: {
-      tr: "(Rolünü, kullandığın teknolojileri ve katkılarını buraya yaz.)",
-      en: "(Describe your role, the technologies you use and your contributions here.)",
+      tr: "BizmedWeb projesinde çalışmaya devam ederek Sinerji Bilişim bünyesinde görevimi sürdürüyorum.",
+      en: "Continuing my work on the BizmedWeb project as part of Sinerji Bilişim.",
+    },
+  },
+  {
+    date: "2025 Nisan — 2025 Kasım",
+    title: { tr: "Full-Stack Software Developer", en: "Full-Stack Software Developer" },
+    org: { tr: "NeveraTech", en: "NeveraTech" },
+    desc: {
+      tr: "MERN mimarisinde web uygulamaları, .NET ile backend API'ler, Electron ile masaüstü uygulamaları ve yapay zeka API'leriyle video üretme uygulamaları geliştirdim; ardından BizmedWeb projesine odaklandım.",
+      en: "Built web apps on the MERN stack, backend APIs with .NET, desktop apps with Electron and AI-powered video generation apps; then focused on the BizmedWeb project.",
+    },
+  },
+  {
+    date: "2024 Haziran — 2025 Mart",
+    title: { tr: "Full-Stack .NET Developer (Trainee)", en: "Full-Stack .NET Developer (Trainee)" },
+    org: { tr: "İstanbul Eğitim Akademi · Yetenek Başakşehir", en: "İstanbul Eğitim Akademi · Yetenek Başakşehir" },
+    desc: {
+      tr: "480 saatlik full-stack odaklı teknik ve pratik eğitim aldım. .NET'in yanı sıra Node.js ile MERN stack uyguladım ve TripLog projesini yayına aldım.",
+      en: "Completed a 480-hour full-stack focused technical and practical program. Applied the MERN stack with Node.js alongside .NET and shipped the TripLog project.",
+    },
+  },
+  {
+    date: "2019 Haziran — 2019 Eylül",
+    title: { tr: "Junior Backend Developer (Staj)", en: "Junior Backend Developer (Intern)" },
+    org: { tr: "DEÜ Bilgi İşlem Daire Başkanlığı", en: "DEÜ IT Department" },
+    desc: {
+      tr: "Üniversite yönetimindeki bir otel için kullanıcı ve personel taraflı bir rezervasyon sitesinin back-end geliştirmesinde görev aldım.",
+      en: "Worked on the back-end of a reservation website (guest and staff sides) for a hotel run by the university administration.",
     },
   },
 ];
@@ -487,7 +571,7 @@ function initContactForm() {
       const body = `${decodeURIComponent(msg)}%0D%0A%0D%0A— ${decodeURIComponent(
         name
       )} (${decodeURIComponent(email)})`;
-      window.location.href = `mailto:makgunes@bizmed.biz?subject=${encodeURIComponent(
+      window.location.href = `mailto:melihcanakgunes@gmail.com?subject=${encodeURIComponent(
         subject
       )}&body=${body}`;
     }
