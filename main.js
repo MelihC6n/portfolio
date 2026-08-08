@@ -203,6 +203,28 @@ const EDUCATION = [
    (title, description, tech tags, GitHub + live links).  */
 const PROJECTS = [
   {
+    icon: "fa-solid fa-clone",
+    title: { tr: "Masabaşı — Online Kart Oyunu Platformu", en: "Masabaşı — Online Card Game Platform" },
+    desc: {
+      tr: "Tarayıcıda oynanan kart ve masa oyunları için çatı platform. Yayındaki oyun 4 kişilik, 60+ ayarla özelleştirilebilen bir kart oyunu: saf (yan etkisiz) kural motoru, sunucu otoriteli mimari ve oyuncuya göre redakte edilen durum. Gerçek zamanlı senkronizasyon Redis Streams üzerinden SSE ile, kesintide kaldığı yerden devam ederek çalışıyor. 3 seviyeli bot, iki dilli arayüz, 157 motor testi.",
+      en: "A hub platform for browser-based card and table games. The live game is a 4-player card game customizable through 60+ settings: a pure (side-effect-free) rules engine, server-authoritative architecture and per-player redacted state. Real-time sync runs over SSE backed by Redis Streams and resumes where it left off after a drop. Three bot levels, bilingual UI, 157 engine tests.",
+    },
+    tags: ["Next.js", "React", "TypeScript", "Redis", "SSE"],
+    code: "",
+    live: "https://masabasi.vercel.app",
+  },
+  {
+    icon: "fa-solid fa-brush",
+    title: { tr: "Feinkontur — Permanent Make-up Studio", en: "Feinkontur — Permanent Make-up Studio" },
+    desc: {
+      tr: "Poing'deki (Münih) bir kalıcı makyaj (PMU) & microblading stüdyosu için SEO odaklı kurumsal tanıtım sitesi. Next.js App Router ile geliştirildi; JSON-LD yapılandırılmış veri, self-hosted fontlar, scroll animasyonları ve Shore üzerinden online randevu içerir.",
+      en: "An SEO-focused marketing website for a permanent make-up (PMU) & microblading studio in Poing (Munich). Built with the Next.js App Router, featuring JSON-LD structured data, self-hosted fonts, scroll animations and online booking via Shore.",
+    },
+    tags: ["Next.js", "React", "TypeScript", "SEO", "Responsive"],
+    code: "",
+    live: "https://feinkontur.com",
+  },
+  {
     icon: "fa-solid fa-network-wired",
     title: { tr: "Merkezi Sipariş Yönetim API Köprüsü", en: "Central Order Management API Bridge" },
     desc: {
